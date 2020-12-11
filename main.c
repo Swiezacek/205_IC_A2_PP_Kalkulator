@@ -15,7 +15,7 @@ int main ()
         case   '*': d=a*b;break;
         case   '/': d=a/b;
             if (b==0)
-                printf ("Nie dzieli sie przez zero ");break;
+                printf ("Nie dzieli sie przez zero!");return 0;
     }
     printf("Wynik to: %.2f\n", d);
     return 0;
