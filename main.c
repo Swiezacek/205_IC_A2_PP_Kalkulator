@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main ()
-{
+int main() {
     int a, b;
     float d;
     char c;
@@ -9,23 +8,22 @@ int main ()
     printf("Podaj dzialanie jakie chcesz wykonac: \n");
     scanf("%d %c %d", &a, &c, &b);
 
-    switch (c)
-    {
+    switch (c) {
         case '+':
-            d=a+b;
+            d = a + b;
             break;
         case '-':
-            d=a-b;
+            d = a - b;
             break;
         case '*':
-            d=a*b;
+            d = a * b;
             break;
         case '/':
-            if (b==0) {
+            if (b == 0) {
                 printf("Nie dzieli sie przez zero!");
                 return 0;
             }
-            d=(float)a/b;
+            d = (float) a / b;
             break;
 
         default:
