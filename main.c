@@ -2,11 +2,11 @@
 
 int main ()
 {
-    int a, b, d;
+    float a, b, d;
     char c;
 
     printf("Podaj dzialanie jakie chcesz wykonac: \n");
-    scanf("%d %c %d", &a, &c, &b);
+    scanf("%f %c %f", &a, &c, &b);
 
     switch (c)
     {
@@ -17,6 +17,6 @@ int main ()
             if (b==0)
                 printf ("Nie dzieli sie przez zero ");break;
     }
-    printf("Wynik to: %d\n", d);
+    printf("Wynik to: %.2f\n", d);
     return 0;
 }
